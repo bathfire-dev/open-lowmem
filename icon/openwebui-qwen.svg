@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Open WebUI Qwen">
+  <title>Open WebUI Qwen</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#042f2e"/>
+      <stop offset="0.55" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#99f6e4" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#99f6e4" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect x="16" y="16" width="480" height="480" rx="112"/></clipPath>
+  </defs>
+
+  <!-- tile -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <rect x="16" y="16" width="480" height="480" fill="url(#glow)"/>
+    <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+      <path d="M16 128H496M16 256H496M16 384H496"/>
+      <path d="M128 16V496M256 16V496M384 16V496"/>
+    </g>
+  </g>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="4"/>
+
+  <!-- big chat bubble with three dots -->
+  <rect x="80" y="170" width="256" height="170" rx="52" fill="#ffffff"/>
+  <path d="M128 330 L116 402 L196 338 Z" fill="#ffffff" stroke="#ffffff" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="#0f766e">
+    <circle cx="150" cy="255" r="19"/>
+    <circle cx="208" cy="255" r="19"/>
+    <circle cx="266" cy="255" r="19"/>
+  </g>
+
+  <!-- small reply bubble -->
+  <rect x="268" y="318" width="160" height="104" rx="38" fill="#67e8f9" stroke="#0f766e" stroke-width="10"/>
+  <path d="M396 416 L420 452 L360 424 Z" fill="#67e8f9" stroke="#67e8f9" stroke-width="10" stroke-linejoin="round"/>
+  <g stroke="#0f766e" stroke-width="14" stroke-linecap="round">
+    <path d="M308 358 H388"/>
+    <path d="M308 388 H356"/>
+  </g>
+
+  <!-- Qwen badge -->
+  <g fill="none" stroke="#ccfbf1" stroke-linecap="round">
+    <circle cx="372" cy="128" r="46" stroke-width="19"/>
+    <path d="M396 156 L424 184" stroke-width="21"/>
+  </g>
+</svg>

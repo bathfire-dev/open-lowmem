@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="OpenCode Qwen">
+  <title>OpenCode Qwen</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#3730a3"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#a5b4fc" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#a5b4fc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cursor" gradientUnits="userSpaceOnUse" x1="290" y1="0" x2="388" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="16" y="16" width="480" height="480" rx="112"/></clipPath>
+  </defs>
+
+  <!-- tile -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <rect x="16" y="16" width="480" height="480" fill="url(#glow)"/>
+    <!-- subtle grid lines, like a code editor -->
+    <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+      <path d="M16 128H496M16 256H496M16 384H496"/>
+      <path d="M128 16V496M256 16V496M384 16V496"/>
+    </g>
+  </g>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="4"/>
+
+  <!-- terminal prompt: > _ -->
+  <path d="M140 188 L254 272 L140 356" fill="none" stroke="#ffffff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M290 366 H388" fill="none" stroke="url(#cursor)" stroke-width="46" stroke-linecap="round"/>
+
+  <!-- Qwen badge: ring with tail (Q) -->
+  <g fill="none" stroke="#ddd6fe" stroke-linecap="round">
+    <circle cx="364" cy="144" r="52" stroke-width="20"/>
+    <path d="M388 168 L420 200" stroke-width="22"/>
+  </g>
+</svg>

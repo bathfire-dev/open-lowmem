@@ -1,0 +1,17 @@
+{
+  "inferenceProvider": "gateway",
+  "inferenceCredentialKind": "static",
+  "inferenceGatewayBaseUrl": "http://127.0.0.1:8090",
+  "inferenceGatewayApiKey": "strata",
+  "inferenceGatewayAuthScheme": "bearer",
+  "modelDiscoveryEnabled": false,
+  "inferenceModels": [
+    {
+      "name": "claude-sonnet-4-6",
+      "labelOverride": "Qwen3.8-Flash-Next",
+      "anthropicFamilyTier": "sonnet",
+      "supports1m": false,
+      "prefer1m": false
+    }
+  ]
+}

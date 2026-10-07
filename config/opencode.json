@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama/huihui-80k",
+  "small_model": "ollama/huihui-80k",
+  "autoupdate": false,
+  "share": "disabled",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:11435/v1",
+        "apiKey": "ollama"
+      },
+      "models": {
+        "huihui-80k": {
+          "name": "Qwen3.8 27B abliterated (80K)",
+          "tool_call": true,
+          "reasoning": true,
+          "attachment": false,
+          "limit": {
+            "context": 81920,
+            "output": 8192
+          }
+        }
+      }
+    },
+    "strata": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Strata (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8090/v1",
+        "apiKey": "strata"
+      },
+      "models": {
+        "qwen3.8-flash-next": {
+          "name": "Qwen3.8-Flash-Next 125B-A6B (IQ2_XS, 128K)",
+          "tool_call": true,
+          "reasoning": true,
+          "attachment": false,
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        }
+      }
+    }
+  }
+}

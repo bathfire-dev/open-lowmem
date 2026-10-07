@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D97757"/>
+      <stop offset="1" stop-color="#B5502F"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+  <!-- 8-ray spark -->
+  <g transform="translate(128 112)" stroke="#FFF4EC" stroke-width="16" stroke-linecap="round">
+    <line x1="0" y1="-62" x2="0" y2="62"/>
+    <line x1="-62" y1="0" x2="62" y2="0"/>
+    <line x1="-44" y1="-44" x2="44" y2="44"/>
+    <line x1="-44" y1="44" x2="44" y2="-44"/>
+  </g>
+  <!-- local / Qwen badge -->
+  <rect x="48" y="188" width="160" height="34" rx="17" fill="#2A1A14" fill-opacity="0.85"/>
+  <text x="128" y="212" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFE2D3">Qwen � ,0</text>
+</svg>
