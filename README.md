@@ -1,8 +1,10 @@
-# open-strata-launcher
+# open-lowmem
+
+Run huge LLMs on tiny memory. 用极少的内存跑超大模型。
 
 [中文](#中文) | [English](#english)
 
-Author: **bathfire-dev** · License: MIT
+Author: **廖亦辰 (Liao Yichen)** · Xiamen, China · GitHub: [@bathfire-dev](https://github.com/bathfire-dev) · License: MIT
 
 ---
 
