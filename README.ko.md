@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/banner.png" alt="open-lowmem: 작은 메모리로 거대한 LLM 실행" width="720"></p>
 
-# open-lowmem: VRAM 24 GB + RAM 32 GB로 1250억 파라미터 LLM 실행하기 (Windows)
+# open-lowmem: VRAM 24 GB + RAM 32 GB로 1250억 파라미터 LLM을 실측 약 75 tokens/s로 실행 (Windows)
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md) | [Português](README.pt-BR.md)
 
@@ -15,6 +15,10 @@
 `open-lowmem`은 Go로 작성한 Windows용 작은 런처 모음입니다. 각 런처는 먼저 로컬 추론 엔진 [Strata](https://github.com/Niko1221/Strata)를 실행합니다. Strata는 GPU VRAM, 시스템 RAM, SSD가 작업을 나눠 맡게 해서 1250억 파라미터 혼합 전문가(MoE) 모델을 일반 게이밍 PC에 올립니다. 그다음 선택한 클라이언트를 실행하고, 창을 닫으면 모든 프로세스를 정리합니다.
 
 키워드: 로컬 LLM, 저 VRAM, 저메모리, 24 GB GPU로 대형 언어 모델 실행, MoE, 양자화(IQ2_XS), Qwen3.8-Flash-Next, Strata, 로컬 모델로 Claude Code 사용, OpenCode, 오프라인 AI 코딩 도우미, RTX 4090, Windows.
+
+## 실측 속도
+
+이 저장소의 개발 PC(RTX 4090D 24 GB, RAM 32 GB, IQ2_XS, Windows, 2026년 10월 7일)에서 측정했습니다. 512 토큰 생성을 8번 측정한 결과 **62~94 tokens/s, 중앙값 약 77**이었습니다. 요청은 한 번에 하나, 프롬프트는 짧습니다. 실제 속도는 컨텍스트 길이, 백그라운드 부하, 모델 크기에 따라 달라집니다.
 
 ## 메모리는 얼마나 필요한가요?
 

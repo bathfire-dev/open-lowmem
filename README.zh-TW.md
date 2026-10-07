@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/banner.png" alt="open-lowmem：用極少的記憶體跑超大模型" width="720"></p>
 
-# open-lowmem：24GB 顯示卡 + 32GB 記憶體執行 1250 億參數大模型（Windows）
+# open-lowmem：24GB 顯示卡 + 32GB 記憶體執行 1250 億參數大模型，實測約 75 tokens/s（Windows）
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md) | [Português](README.pt-BR.md)
 
@@ -15,6 +15,10 @@
 `open-lowmem`（低記憶體）是一組用 Go 撰寫的 Windows 小型啟動器。每個啟動器會先啟動本機推論引擎 [Strata](https://github.com/Niko1221/Strata)，它讓顯示卡的 VRAM、系統記憶體和 SSD 分工合作，使 1250 億參數的混合專家模型能放進一般電競電腦。接著啟動你選的用戶端，關閉視窗時會自動清理所有程序。
 
 關鍵字：本機大模型、低顯存、低記憶體、24G 顯存跑大模型、MoE 混合專家、量化（IQ2_XS）、Qwen3.8-Flash-Next、Strata、Claude Code 接本機模型、OpenCode、離線 AI 程式助手、RTX 4090、Windows。
+
+## 實測速度
+
+在本專案的開發機上實測（RTX 4090D 24GB、32GB 記憶體、IQ2_XS、Windows，2026 年 10 月 7 日）：生成 512 個 token，共測 8 次，結果為 **62–94 tokens/s，中位數約 77**。一次一個請求，提示詞很短。實際速度會隨上下文長度、背景負載與模型版本而變化。
 
 ## 需要多少記憶體？
 

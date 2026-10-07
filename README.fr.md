@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/banner.png" alt="open-lowmem : faire tourner d'énormes LLM avec très peu de mémoire" width="720"></p>
 
-# open-lowmem : faire tourner un LLM de 125 Md de paramètres sur un GPU de 24 Go et 32 Go de RAM (Windows)
+# open-lowmem : faire tourner un LLM de 125 Md de paramètres à ~75 tokens/s sur un GPU de 24 Go et 32 Go de RAM (Windows)
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md) | [Português](README.pt-BR.md)
 
@@ -15,6 +15,10 @@ Auteur : **廖亦辰 (Liao Yichen)** · Xiamen, Chine · GitHub [@bathfire-dev](
 `open-lowmem` est un ensemble de petits lanceurs Go pour Windows. Chacun démarre d'abord le moteur d'inférence local [Strata](https://github.com/Niko1221/Strata), qui permet à un modèle à mélange d'experts de 125 Md de paramètres de tenir dans un PC de jeu ordinaire en répartissant le travail entre la VRAM du GPU, la RAM du système et le SSD. Le lanceur démarre ensuite le client choisi et nettoie tout à la fermeture de la fenêtre.
 
 Mots-clés : LLM local, peu de VRAM, faible mémoire, exécuter de grands modèles de langage sur un GPU de 24 Go, MoE, quantification (IQ2_XS), Qwen3.8-Flash-Next, Strata, Claude Code avec un modèle local, OpenCode, assistant de programmation IA hors ligne, RTX 4090, Windows.
+
+## Vitesse mesurée
+
+Mesurée sur la machine de développement de ce dépôt (RTX 4090D 24 Go, 32 Go de RAM, IQ2_XS, Windows, 7 octobre 2026) : 8 exécutions de 512 tokens générés ont donné **entre 62 et 94 tokens/s, avec une médiane d'environ 77**. Une requête à la fois, prompt court. Votre vitesse variera selon la longueur du contexte, la charge en arrière-plan et la taille du modèle.
 
 ## De combien de mémoire a-t-on besoin ?
 

@@ -4,6 +4,8 @@
 
 Author: Liao Yichen (廖亦辰), Xiamen, China. GitHub: bathfire-dev. License: MIT.
 
+Measured speed (this repo's dev machine: RTX 4090D 24 GB, 32 GB RAM, IQ2_XS, Windows, 2026-10-07): 8 runs of 512 generated tokens gave 62-94 tokens/s, median about 77, one request at a time with a short prompt.
+
 Facts (memory figures are from the Strata documentation, not measured here):
 - Qwen3.8-Flash-Next IQ2_XS needs about 39.2 GB of combined RAM and VRAM; Q2_0 about 37.6 GB.
 - Strata needs a 12 GB or larger NVIDIA/AMD GPU, 32 GB or more RAM, about 80 GB free disk.

@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/banner.png" alt="open-lowmem: 小さなメモリで巨大な LLM を動かす" width="720"></p>
 
-# open-lowmem: VRAM 24 GB + RAM 32 GB で 1250 億パラメータの LLM を動かす（Windows）
+# open-lowmem: VRAM 24 GB + RAM 32 GB で 1250 億パラメータの LLM を実測約 75 tokens/s で動かす（Windows）
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md) | [Português](README.pt-BR.md)
 
@@ -15,6 +15,10 @@
 `open-lowmem` は Go で書かれた Windows 用の小さなランチャー集です。どれも最初にローカル推論エンジン [Strata](https://github.com/Niko1221/Strata) を起動します。Strata は GPU の VRAM、システム RAM、SSD で処理を分担し、1250 億パラメータの Mixture-of-Experts モデルを一般的なゲーミング PC に収めます。そのあと選んだクライアントを起動し、ウィンドウを閉じるとすべてのプロセスを片付けます。
 
 キーワード: ローカル LLM、低 VRAM、低メモリ、24 GB GPU で大規模言語モデル、MoE、量子化（IQ2_XS）、Qwen3.8-Flash-Next、Strata、Claude Code をローカルモデルで使う、OpenCode、オフライン AI コーディング、RTX 4090、Windows。
+
+## 実測速度
+
+このリポジトリの開発マシン（RTX 4090D 24 GB、RAM 32 GB、IQ2_XS、Windows、2026 年 10 月 7 日）での実測です。512 トークンの生成を 8 回計測し、**62〜94 tokens/s、中央値は約 77** でした。リクエストは 1 つずつ、プロンプトは短いものです。実際の速度はコンテキスト長、バックグラウンドの負荷、モデルサイズで変わります。
 
 ## 必要なメモリは？
 

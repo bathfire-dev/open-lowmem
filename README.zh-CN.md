@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/banner.png" alt="open-lowmem：用极少的内存跑超大模型" width="720"></p>
 
-# open-lowmem：24GB 显卡 + 32GB 内存运行 1250 亿参数大模型（Windows）
+# open-lowmem：24GB 显卡 + 32GB 内存运行 1250 亿参数大模型，实测约 75 tokens/s（Windows）
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md) | [Português](README.pt-BR.md)
 
@@ -15,6 +15,10 @@
 `open-lowmem`（低内存）是一组 Windows 小启动器，用 Go 编写。每个启动器都会先启动本地推理引擎 [Strata](https://github.com/Niko1221/Strata)，它把显存、内存和 SSD 配合起来，让 1250 亿参数的混合专家模型塞进普通游戏电脑。然后启动你选的客户端，关闭窗口时自动清理所有进程。
 
 关键词：本地大模型、低显存、低内存、24G 显存跑大模型、显存不够怎么办、MoE 混合专家、量化（IQ2_XS）、Qwen3.8-Flash-Next、Strata、Claude Code 接本地模型、OpenCode、离线 AI 编程助手、RTX 4090、Windows。
+
+## 实测速度
+
+在本仓库的开发机上实测（RTX 4090D 24GB、32GB 内存、IQ2_XS、Windows，2026 年 10 月 7 日）：生成 512 个 token，共测 8 次，结果为 **62–94 tokens/s，中位数约 77**。一次一个请求，提示词很短。实际速度会随上下文长度、后台负载和模型版本变化。
 
 ## 需要多少内存？
 

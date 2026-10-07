@@ -48,7 +48,7 @@
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
     <text x="594" y="272" font-size="88" font-weight="700" fill="#F8FAFC">open-lowmem</text>
     <text x="598" y="340" font-size="38" fill="#7DD3FC">Run huge LLMs on tiny memory</text>
-    <text x="598" y="410" font-size="28" fill="#CBD5E1">125B MoE model &#183; 24 GB VRAM &#183; 32 GB RAM</text>
+    <text x="598" y="410" font-size="28" fill="#CBD5E1">125B MoE &#183; ~75 tok/s &#183; 24 GB VRAM &#183; 32 GB RAM</text>
     <text x="598" y="452" font-size="28" fill="#CBD5E1">Claude Code &#183; OpenCode &#183; Open WebUI</text>
     <text x="598" y="540" font-size="26" fill="#94A3B8">github.com/bathfire-dev/open-lowmem</text>
   </g>
