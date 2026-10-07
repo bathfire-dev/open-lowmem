@@ -49,6 +49,12 @@ Author: **bathfire-dev** · License: MIT
 - `icon/` 图标和生成脚本
 - `build.ps1` 构建脚本
 
+### 交流群
+
+微信扫码加入「AI时代」群聊（二维码 7 天有效，截止 10 月 14 日；过期了请在 Issues 里留言，我会更新）：
+
+<img src="docs/wechat-group.png" alt="微信群「AI时代」二维码" width="260">
+
 ### 致谢与第三方许可
 
 - [Strata](https://github.com/Niko1221/Strata)：推理引擎，请遵循其许可证。
@@ -75,6 +81,12 @@ One-click Windows launchers that start a local **Qwen3.8-Flash-Next** through th
 2. Put Strata in `strata\Strata-main` (or set `STRATA_DIR`) and generate its `run-*.bat`.
 3. `npm install` in `opencode\` (OpenCode launchers) and in `claudeui\` (web UI).
 4. Run `.\build.ps1`, or `.\build.ps1 -Only <name>` with one of: tui, web, desktop, openwebui, strata, claude, claudewrap, claudeui, claudedesktop. Output goes to `dist\`.
+
+### Chat group
+
+WeChat group "AI时代" (the QR code expires on Oct 14; open an issue if it has expired and I will refresh it):
+
+<img src="docs/wechat-group.png" alt="WeChat group QR code" width="260">
 
 ### Credits and third-party licenses
 
