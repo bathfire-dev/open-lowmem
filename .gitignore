@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/README.md
+!/README.*.md
 !/LICENSE
 !/llms.txt
 !/CITATION.cff

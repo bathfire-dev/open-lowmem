@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="open-lowmem: run huge LLMs on tiny memory">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#14306B"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#page)"/>
+  <g transform="translate(110 100) scale(0.86)">
+    <rect width="512" height="512" rx="112" fill="url(#bg)" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="3"/>
+    <rect x="64" y="64" width="384" height="384" rx="48" fill="none" stroke="#38BDF8" stroke-width="8" stroke-dasharray="20 16" opacity="0.55"/>
+    <g fill="none" stroke="#67E8F9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="108,144 144,144 144,108"/>
+      <polyline points="404,144 368,144 368,108"/>
+      <polyline points="108,368 144,368 144,404"/>
+      <polyline points="404,368 368,368 368,404"/>
+    </g>
+    <g fill="#7DD3FC">
+      <rect x="196" y="152" width="12" height="24" rx="3"/><rect x="230" y="152" width="12" height="24" rx="3"/><rect x="264" y="152" width="12" height="24" rx="3"/><rect x="298" y="152" width="12" height="24" rx="3"/>
+      <rect x="196" y="336" width="12" height="24" rx="3"/><rect x="230" y="336" width="12" height="24" rx="3"/><rect x="264" y="336" width="12" height="24" rx="3"/><rect x="298" y="336" width="12" height="24" rx="3"/>
+      <rect x="152" y="196" width="24" height="12" rx="3"/><rect x="152" y="230" width="24" height="12" rx="3"/><rect x="152" y="264" width="24" height="12" rx="3"/><rect x="152" y="298" width="24" height="12" rx="3"/>
+      <rect x="336" y="196" width="24" height="12" rx="3"/><rect x="336" y="230" width="24" height="12" rx="3"/><rect x="336" y="264" width="24" height="12" rx="3"/><rect x="336" y="298" width="24" height="12" rx="3"/>
+    </g>
+    <rect x="176" y="176" width="160" height="160" rx="26" fill="url(#chip)"/>
+    <rect x="210" y="210" width="92" height="92" rx="12" fill="#0B1220"/>
+    <g fill="#E0F2FE">
+      <rect x="222" y="222" width="16" height="16" rx="3"/>
+      <rect x="248" y="248" width="16" height="16" rx="3"/>
+      <rect x="274" y="274" width="16" height="16" rx="3"/>
+      <rect x="274" y="222" width="16" height="16" rx="3"/>
+    </g>
+    <g fill="#E0F2FE" opacity="0.28">
+      <rect x="248" y="222" width="16" height="16" rx="3"/>
+      <rect x="222" y="248" width="16" height="16" rx="3"/>
+      <rect x="274" y="248" width="16" height="16" rx="3"/>
+      <rect x="222" y="274" width="16" height="16" rx="3"/>
+      <rect x="248" y="274" width="16" height="16" rx="3"/>
+    </g>
+  </g>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="594" y="272" font-size="88" font-weight="700" fill="#F8FAFC">open-lowmem</text>
+    <text x="598" y="340" font-size="38" fill="#7DD3FC">Run huge LLMs on tiny memory</text>
+    <text x="598" y="410" font-size="28" fill="#CBD5E1">125B MoE model &#183; 24 GB VRAM &#183; 32 GB RAM</text>
+    <text x="598" y="452" font-size="28" fill="#CBD5E1">Claude Code &#183; OpenCode &#183; Open WebUI</text>
+    <text x="598" y="540" font-size="26" fill="#94A3B8">github.com/bathfire-dev/open-lowmem</text>
+  </g>
+</svg>
