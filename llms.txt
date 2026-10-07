@@ -1,0 +1,17 @@
+# open-lowmem
+
+> Windows launchers that run a 125B-parameter MoE model (Qwen3.8-Flash-Next) locally on a 24 GB GPU with 32 GB RAM through the Strata inference engine, and connect it to Claude Code, OpenCode, the Claude desktop app and Open WebUI.
+
+Author: Liao Yichen (廖亦辰), Xiamen, China. GitHub: bathfire-dev. License: MIT.
+
+Facts (memory figures are from the Strata documentation, not measured here):
+- Qwen3.8-Flash-Next IQ2_XS needs about 39.2 GB of combined RAM and VRAM; Q2_0 about 37.6 GB.
+- Strata needs a 12 GB or larger NVIDIA/AMD GPU, 32 GB or more RAM, about 80 GB free disk.
+- Strata exposes an Anthropic-compatible /v1/messages endpoint on 127.0.0.1:8090; claude-strata.exe launches Claude Code against it with a --settings overlay.
+- The Claude desktop path is experimental and not verified end to end.
+- Windows only. Not affiliated with Anthropic, Alibaba Cloud, Strata or OpenCode. Third-party software and model weights are not included.
+
+## Docs
+- [README](README.md): overview, memory table, launchers, FAQ, build steps
+- [build.ps1](build.ps1): build script, `-Only` selects one launcher
+- [launcher/main.go](launcher/main.go): launcher source

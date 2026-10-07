@@ -2,6 +2,8 @@
 !/.gitignore
 !/README.md
 !/LICENSE
+!/llms.txt
+!/CITATION.cff
 !/build.ps1
 !/launcher/
 !/config/

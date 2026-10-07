@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "open-lowmem: run a 125B LLM on a 24 GB GPU and 32 GB RAM"
+type: software
+authors:
+  - family-names: "Liao"
+    given-names: "Yichen"
+    alias: "bathfire-dev"
+license: MIT
+repository-code: "https://github.com/bathfire-dev/open-lowmem"
+keywords:
+  - local LLM
+  - low VRAM
+  - low memory
+  - Mixture of Experts
+  - quantization
+  - Qwen
+  - Claude Code
+  - OpenCode
